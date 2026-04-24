@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/265bed162f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="./pictures/2.png" class="logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Front-end Developer</p>
+        <h1>
+          Hi, I am <span>Suraj Ghante</span><br />
+          from India
+        </h1>
+      </div>
+    </div>
+  </div>
+  <!-- -----------------------about-------------------------------- -->
+  <div id="About">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="pictures/Untitled design-Photoroom.png" alt="" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About me</h1>
+          <p>
+            Frontend Developer passionate about building responsive and
+            user-friendly web applications. Skilled in HTML, CSS, JavaScript,
+            and React, with a focus on clean code and modern UI design. Always
+            eager to learn and grow while creating impactful digital
+            experiences.
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="opentab('Experience')">
+              Experience
+            </p>
+            <p class="tab-links" onclick="opentab('Education')">Education</p>
+            <p class="tab-links" onclick="opentab('Hobby')">Hobby</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <span>Front-end</span><br />Designing Web/App Interfaces
+              </li>
+              <li>
+                <span>Java Core</span><br />Playing with Data Structures
+              </li>
+              <li><span>Python</span><br />Famaliar with Django</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="Experience">
+            <ul>
+              <li>
+                <span>2023-2024</span><br />Participated in SIH Hackathon ,
+                showcasing my creativity through writing scripts for
+                presentation
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="Education">
+            <ul>
+              <li>
+                <span>2022-2023</span><br />
+                93.8% in 10th board examination <br />
+                73.4% in 12th board examination
+              </li>
+              <li><span>C & C++</span><br />Certified in C and C++</li>
+              <li><span>Core Java</span><br />Certified in Java</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="Hobby">
+            <ul>
+              <li>
+                <span>Trekking</span><br />
+                Climbed few Forts in Maharashtra
+              </li>
+              <li>
+                <span>Writing</span><br />
+                getting scripts ready for presentation / blogs
+              </li>
+              <li><span>Poet</span><br />Writes fictional poems</li>
+              <li><span>Reading</span><br />Reading non-fictional books</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- --------------------services----------------------     -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Front-end Development</h1>
+            <p>
+              I design clean and visually appealing user interfaces with a
+              strong emphasis on user experience. My goal is to create intuitive
+              layouts that are easy to navigate and provide a smooth interaction
+              for users.
+            </p>
+            <a href="#">Learn More</a>
+        </div>
+
+
+        <div>
+          <i class="fa-brands fa-blogger"></i>
+          <h2>Content writing</h1>
+            <p>
+              I provide creative writing services for storytelling, social media captions, and unique content ideas. My
+              focus is on originality and creating content that captures attention.
+            </p>
+            <a href="#">Learn More</a>
+
+        </div>
+
+        <div>
+          <i class="fa-solid fa-bullhorn"></i>
+          <h2>Public Speaking</h1>
+            <p>
+              I inspire and motivate audiences by sharing experiences, insights, and practical advice. My goal is to
+              encourage confidence, growth, and a positive mindset.
+            </p>
+            <a href="#">Learn More</a>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ---------------------portfolio---------------- -->
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+
+        <div class="work">
+          <img src="pictures/p1.jpg" alt="">
+          <div class="layer">
+            <h3>Alumni Management System</h3>
+            <p>Manage the Alumni Database and bridge the gap between Students and Alumni.</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="pictures/p2.jpg" alt="">
+          <div class="layer">
+            <h3>Restaurant Menu Webpage </h3>
+            <p>Using Django, built a basic 🍽️ Food Menu App </p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+      </div>
+      <a href="" class="btn">See more</a>
+    </div>
+  </div>
+  <!-- ---------------------------contact-----------------------------    -->
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact me</h1>
+          <p> <i class="fa-solid fa-paper-plane"></i></i>suryaghante09@gmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i>8485041125</p>
+          <div class="social-icons">
+            <a href="https://github.com/Surajghante099"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/the.surya9/"><i class="fa-brands fa-instagram"></i></i></a>
+            <a
+              href="https://www.linkedin.com/in/suraj-ghante-a607ab325?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i
+                class="fa-brands fa-linkedin"></i></i></a>
+          </div>
+          <a href="pictures/pdf/Suraj Sheshnarayan Ghante (1).pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <!-- <form>
+            <input type="text" name="Name" placeholder="Your Name " required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message"rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit"  class="btn btn2"  onclick="SubForm()">Submit</button>
+
+          </form> -->
+
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Have a Good Day<i class="fa-solid fa-heart"></i> </p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+
+
+
+
+  </script>
+
+
+
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby9s4yMIYBJPcKIIiwGezJiZE_nCc3Aj35sNhK6pbDlZpxztbhDXGmmbeMVkavDOthA/exec'   // paste your Google Script URL here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+
+      fetch(scriptURL, {
+        method: 'POST',
+        body: new FormData(form)
+      })
+        .then(response => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },5000)
+          form.reset()
+        })
+        .catch(error => {
+          console.error('Error!', error.message)
+        })
+    })
+  </script>
+
+
+
+
+
+</body>
+
+</html>
